@@ -1,6 +1,6 @@
-import { schema } from "better-auth/client/plugins"
-import { drizzle } from "drizzle-orm/singlestore/driver"
+import { drizzle } from "drizzle-orm/postgres-js"
 import postgres from "postgres"
+import * as schema from "./schema"
 
 const connectionString = process.env.DATABASE_URL
 
