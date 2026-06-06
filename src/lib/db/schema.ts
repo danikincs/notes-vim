@@ -1,5 +1,6 @@
 import { relations } from "drizzle-orm"
 import { pgTable, text, timestamp } from "drizzle-orm/pg-core"
+export * from "./auth-schema"
 
 export const folders = pgTable("folders", {
     id: text("id").primaryKey(),
